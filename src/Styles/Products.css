@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;500&display=swap');
+
+
+.productContainer {
+    color: #fff;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(110deg, #ff9900 60%, #ffb700 60%);
+    transition: background 2s ease-in-out;
+}
+
+.productContainer .prodHeader{
+    display: flex;
+    width: 95%;
+    height: 300px;
+    margin-bottom: -100px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+.productContainer h1 {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 4px;
+    margin-top: 50px;
+
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 80px 50px 40px 50px;
+}
+
+.productCard {
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 10px 20px 30px 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.productGrid .productCard .productImg {
+
+    margin-top: -38%;
+    padding: 8% 0px 20px 15px;
+    width: 100%;
+    position: relative;
+    left: 11%;
+    top: 24%;
+    z-index: 99999;
+    transition: all 0.5s ease-in-out;
+}
+
+.productGrid .productCard .productImg img {
+    user-select: none;
+    pointer-events: none;
+    width: 70%;
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.6));
+}
+
+/* -------------------------------------- */
+/* tablet */
+
+@media screen and (max-width: 900px) {
+
+    .prodCardContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .productGrid{
+        padding: 80px 50px 40px 0px;
+    }
+    .productCard{
+        padding: 10px 100px 30px 100px;
+    }
+}
+
+
+/* ---------------------------------- */
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+    .productGrid{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        padding: 80px 10px 40px 10px;
+    }
+
+    .productCard{
+        min-width: 250px;
+        width: 280px;
+        padding: 0px 15px 30px 15px;
+        margin-left: 20px;
+    }
+
+    .productContainer h1 {
+        font-size: 58px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 0px;
+     
+    
+    }
+
+}
+
+
+
+/* ------------------ Product Info ----------------------- */
+
+.productGrid .productCard .productInfo {
+    padding: 20px;
+    padding-top: 110px;
+    margin-top: -25px;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    text-align: justify;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.336);
+}
+
+.productGrid .productCard .productInfo .title {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.productGrid .productCard .productInfo p {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 10px;
+}
+
+.productGrid .productCard .productInfo span {
+    font-weight: 500
+}
+
+
+/* -------------------------------------------------------- */
+/* Quantity controls */
+
+.controlQuantity {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+.controlQuantity .qunatityBtn img {
+    margin-top: 5px;
+    width: 25px;
+}
+
+
+.ProductButtonContainer button {
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 5px 0px 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.ProductButtonContainer .addCartBtn {
+    background-color: #de9400;
+    color: #fff;
+}
+
+.ProductButtonContainer .moreInfoBtn {
+    background-color: transparent;
+    color: #cd8903;
+}
+
+
+
+
+/* ---------------- Hover ------------------------ */
+
+.productGrid .productCard:hover .productImg {
+    left: 11%;
+    top: 20%;
+}
+
+.productCard:hover {
+    transform: scale(1.2);
+}

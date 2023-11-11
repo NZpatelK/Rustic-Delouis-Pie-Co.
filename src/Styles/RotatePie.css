@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+/* Styles for the parent container */
+.rotatePieContainer {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: background 3s ease;
+}
+
+/* ------------------------------------------------------------ */
+.content {
+  position: absolute;
+  top: 12%;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  font-size: 160px;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transition: all 2.5s ease;
+}
+
+/* -------------------------------------------------------- */
+/* inital start zoom in text */
+.initalText {
+  animation: 3s contentTitleMotion forwards;
+}
+
+@keyframes contentTitleMotion {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* -------------------------------------------------------- */
+
+.content .contentTitle {
+  font-family: 'Luckiest Guy', cursive;
+  margin-bottom: -50px;
+  padding: 0;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+
+
+.content .price {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/* -------------------------------------- */
+/* addCart and more info button */
+
+.content .addCart {
+  padding-top: 20px;
+  display: flex;
+  margin-right: 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content .addCart .button {
+  font-weight: 400;
+  padding: 6px;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 200px;
+  backdrop-filter: blur(50px);
+  color: #fff;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.content .addCart .moreInfo {
+  margin-left: 10px;
+  background-color: #fff;
+  color: black;
+}
+
+/* -------------------------------------- */
+/* Text transition maotion left and right */
+
+.ContentLeftExit {
+  transform: translateX(-110%);
+  opacity: 0;
+}
+
+.ContentEnter {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.ContentRightExit {
+  transform: translateX(110%);
+  opacity: 0;
+}
+
+/* -------------------------------------- */
+/* tablet */
+
+@media screen and (max-width: 1280px) {
+
+  .content {
+    top: 4%;
+    margin-top: 100px;
+  }
+
+  .content .contentTitle {
+    margin-bottom: -30px;
+    font-size: 100px;
+    letter-spacing: 6px;
+    font-weight: 900;
+  }
+
+  .content .price {
+    font-size: 20px;
+  }
+
+  .content .addCart .button {
+    width: 100px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 200px;
+    margin-left: 10px;
+
+
+  }
+}
+
+/* ---------------------------------- */
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+  .content {
+    top: 0.2%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .contentTitle {
+    margin-bottom: -20px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .content .addCart {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content .price {
+    font-size: 14px;
+  }
+
+  .content .addCart .button {
+    width: 90px;
+    height: 10px;
+    font-size: 12px;
+    border-radius: 200px;
+    margin-left: 10px;
+  }
+
+}
+
+/* ------------------------------------------------------------ */
+/* fruit images */
+
+.fruit {
+  position: absolute;
+  width: 300px;
+  transition: all 3s ease;
+  animation: 3s motion forwards;
+  user-select: none;
+  pointer-events: none;
+}
+
+.initalStartDelay {
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+
+.imgExit {
+  animation: 3s Exitmotion forwards;
+}
+
+.startImg {
+  opacity: 0;
+  animation: 3s Hidemotion forwards;
+}
+
+.postion0 {
+  top: 38%;
+  left: 20%;
+  transform: rotate(340deg);
+}
+
+.postion1 {
+  top: 25%;
+  left: 52%;
+  transform: rotate(60deg);
+}
+
+
+.postion2 {
+  top: 25%;
+  left: -10%;
+  transform: rotate(10deg)
+}
+
+
+.postion3 {
+  top: 0%;
+  left: 75%;
+  transform: rotate(00deg);
+}
+
+
+.postion4 {
+  top: 0%;
+  left: 10%;
+  transform: rotate(40deg);
+}
+
+.postion5 {
+  top: 40%;
+  left: 85%;
+  transform: rotate(20deg);
+}
+
+
+.postion6 {
+  top: 60%;
+  left: 2%;
+  transform: rotate(60deg);
+}
+
+.postion7 {
+  top: 70%;
+  left: 70%;
+  transform: rotate(0deg);
+}
+
+.postion8 {
+  top: 80%;
+  left: 92%;
+  transform: rotate(65deg);
+}
+
+
+
+@keyframes motion {
+
+  0% {
+    top: 100%;
+    left: 50%;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes Exitmotion {
+
+  100% {
+    top: 100%;
+    left: 50%;
+  }
+
+}
+
+@keyframes Hidemotion {
+
+  0% {
+    top: 100%;
+    left: 50%;
+
+  }
+
+  100% {
+    top: 100%;
+    left: 50%;
+  }
+
+}
+
+/* -------------------------------------- */
+/* tablet */
+
+@media screen and (max-width: 1280px) {
+  .fruit {
+    width: 250px;
+  }
+
+}
+
+/* ---------------------------------- */
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+  .fruit {
+    width: 150px;
+  }
+
+}
+
+/* ------------------------------------------------------------ */
+/* Switch button to switch the image of pie */
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swtichPie {
+  position: relative;
+  width: 100%;
+  display: flex;
+  z-index: 9999;
+}
+
+.swtichPie .leftSlide {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  transform: rotate(180deg);
+  justify-content: flex-start;
+  margin-left: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 3s ease;
+}
+
+.disableButton {
+  opacity: 0;
+  cursor: not-allowed;
+}
+
+.swtichPie .leftSlide img,
+.swtichPie .rightSlide img {
+  width: 100px;
+}
+
+.swtichPie .rightSlide {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 3s ease;
+}
+
+/* ---------------------------------- */
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+  .swtichPie {
+    margin-top: -50px;
+  }
+
+  .swtichPie .leftSlide img,
+  .swtichPie .rightSlide img {
+    width: 30px;
+  }
+}
+
+/* ---------------------------------- Pie Image ---------------------------------- */
+
+
+.rotateMotion {
+  position: absolute;
+  height: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: -70%;
+  transition: 2.5s all cubic-bezier(0.52, 1.59, 0.59, 1);
+}
+
+.initalPie {
+  animation: 3s turningMotion forwards;
+}
+
+@keyframes turningMotion {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+
+.img1,
+.img2 {
+  user-select: none;
+  pointer-events: none;
+  height: 100%;
+}
+
+
+.img1 {
+  order: 1;
+  background-size: cover;
+
+}
+
+.img2 {
+  order: 1;
+  transition: opacity 10s ease;
+  transform: rotate(180deg);
+}
+
+/* ----------------------------------
+/* tablet */
+
+/* @media screen and (max-width: 768px) {
+
+  .rotateMotion {
+    bottom: -300px;
+  }
+
+  .img1,
+  .img2 {
+    height: ;
+  }
+
+
+
+} */
+
+/* ---------------------------------- */
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+  .rotateMotion {
+    bottom: -60%;
+    height: 110%;
+  }
+
+
+}

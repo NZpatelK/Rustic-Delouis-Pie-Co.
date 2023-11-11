@@ -1,0 +1,151 @@
+/* Styles for the navbar  TODO: fix this too */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Desktop and laptop navbar */
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Acme', sans-serif;
+  padding: 20px 0px 20px 20px;
+  margin: 0;
+  color: #fff;
+  background-color: #00000038;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.384);
+  opacity: 1;
+  z-index: 9999999999999;
+}
+
+.navBarTitle {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 9999999999999;
+}
+
+
+.navBarLinks {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+
+.navBarLinks a,
+.linkName {
+  font-size: 24px;
+  margin-left: 24px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ /* ------------------------------------------------------------------------------ */
+ /* Mobile and tablet size navbar  */
+
+.mobileNavBar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger {
+  display: block;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 30px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 99999999999;
+  transition: 2s;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 6px 0px;
+  transition: 1s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-6px, 4px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -112%;
+  width: 110%;
+  min-height: 100vh;
+  display: block;
+  z-index: 99999999;
+  background-color: #a8000075;
+  box-shadow: -7px 0px 11px 4px rgba(0, 0, 0, 0.189);
+  backdrop-filter: blur(10px);
+  padding-top: 120px;
+  transition: 2s;
+}
+
+.mobile-nav.is-active {
+  right: 0;
+}
+
+.mobile-nav .linkName {
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.mobile-nav .linkName:hover {
+  background-color: #ffffff3f;
+
+}
+
+ /* ------------------------------------------------------------------------------ */
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .navBarTitle {
+    font-size: 24px;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  .navBar{
+    background-color: #c10202;
+    backdrop-filter: none;
+
+  }
+
+  .navBarTitle {
+    font-size: 20px;
+  }
+
+
+}

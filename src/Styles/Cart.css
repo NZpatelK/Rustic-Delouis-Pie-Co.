@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+
+.cartContainer {
+    background: linear-gradient(110deg, #ff9900 60%, #ffb700 60%);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+}
+
+.cartHeader {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.cartHeader h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.twoColumm {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.listItemContainer {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin-right: 40px;
+    height: 100%;
+}
+
+.subTatalContainer {
+    background-color: #1d1d1d22;
+    width: 50%;
+    height: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+/* ---------------- list of Item Conatiner -------------------------  */
+
+
+.prodCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0;
+    padding: -20px 0px 30px 0px;
+    transition: 0.5s;
+}
+
+.prodCard .prodImg {
+    position: relative;
+    width: 400px;
+    margin-left: -100px;
+    padding: 0 3% 0 20px;
+    z-index: 9999999;
+    left: 8%;
+}
+
+.prodCard .prodImg img {
+    width: 180px;
+    padding: 30px;
+    filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.6));
+}
+
+.prodCard .prodContent {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 100px;
+    margin-left: -50px;
+    width: 100%;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.159);
+    background-color: #fff;
+
+}
+
+.prodDesc .prodTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.prodDesc .retailPrice {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.prodDesc .prodSize {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.pordControlQuantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.prodQuantity .pordControlQuantity p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.prodQuantity .quantityValue {
+    font-weight: 600 !important;
+    padding: 0;
+    margin: 0 10px !important;
+}
+
+.prodQuantity .pordControlQuantity img {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+.prodTotalPrice {
+    position: absolute;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    right: 20px;
+    bottom: -15px;
+    margin: 0;
+    padding: 0;
+}
+
+.removeItem img {
+    width: 20px !important;
+}
+
+.removeItem {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------Summary the order with total cost conatiner------------------------------------- */
+
+
+
+h3 {
+    text-align: center;
+}
+
+
+.subTotal {
+    padding: 20px 40px;
+}
+
+.subTotalHeader {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.subTotal p {
+    padding: 0 20px;
+}
+
+.promoCodeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promoCodeInput {
+    width: 100%;
+    height: 50px;
+    /* border-radius: 10px; */
+    margin: 20px 5px 0px 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.broderLine {
+    border-bottom: 2px solid #00000049;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.promoCodeButton {
+    width: 40% !important;
+    height: 52px !important;
+    border-radius: 0px !important;
+    margin: 20px 5px 0px 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+.totalPay {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.subTotal button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 5px 0px 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #4f4f4f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #8e8e8e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #a20404;
+    border-radius: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* Resize the screen */
+
+/* laptop */
+@media screen and (max-width: 1325px) {
+
+    .twoColumm {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .listItemContainer {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .subTatalContainer {
+        width: 100%;
+        max-width: 500px;
+    }
+
+
+
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .twoColumm {
+        flex-direction: column;
+        padding: 0 10px;
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .listItemContainer {
+        width: 100%;
+        margin-right: 10%;
+        margin-bottom: 40px;
+    }
+
+    .subTatalContainer {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .cartHeader h1 {
+        font-size: 60px;
+    }
+
+    .prodCard .prodImg {
+        width: 300px;
+        margin-left: -50px;
+        padding: 0 3% 0 20px;
+        z-index: 9999999;
+        left: 8%;
+    }
+
+    .prodCard .prodImg img {
+        width: 150px;
+        padding: 30px;
+        filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.6));
+    }
+
+    .prodCard .prodContent {
+        padding: 0px 0px 0px 100px;
+        margin-left: -50px;
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.159);
+        background-color: #fff;
+
+    }
+
+    .prodDesc .prodTitle {
+        font-size: 25px;
+        width: 90%;
+    }
+
+    .prodDesc .retailPrice {
+        font-size: 14px;
+    }
+
+    .prodDesc .prodSize {
+        font-size: 14px;
+    }
+
+    .pordControlQuantity {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .prodQuantity .pordControlQuantity p {
+        font-size: 14px;
+    }
+
+    .prodTotalPrice {
+        font-size: 18px !important;
+        right: 25px;
+        bottom: -10px;
+    }
+
+    .removeItem img {
+        width: 20px !important;
+    }
+
+    .removeItem {
+        right: 20px;
+        top: 20px;
+    }
+
+
+}
+
+/* Mobile */
+@media screen and (max-width: 630px) {
+
+    .prodCard .prodImg {
+        width: 300px;
+        margin-left: -60px;
+        padding: 0 3% 0 20px;
+        z-index: 9999999;
+        left: 8%;
+    }
+
+    .prodCard .prodImg img {
+        width: 120px;
+        padding: 30px;
+        filter: drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.6));
+    }
+
+    .prodCard .prodContent {
+        padding: 0px 0px 0px 50px;
+        margin-left: -40px;
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.159);
+        background-color: #fff;
+
+    }
+
+    .prodDesc .prodTitle {
+        font-size: 18px;
+        width: 85%;
+    }
+
+    .prodDesc .retailPrice {
+        font-size: 12px;
+    }
+
+    .prodDesc .prodSize {
+        font-size: 12px;
+    }
+
+    .pordControlQuantity {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .prodQuantity .pordControlQuantity p {
+        font-size: 14px;
+    }
+
+    .prodTotalPrice {
+        position: relative;
+        margin-left: 25px;
+        border-top: 2px solid #00000027;
+        font-size: 14px !important;
+    }
+
+    .removeItem img {
+        width: 15px !important;
+    }
+
+    .removeItem {
+        right: 20px;
+        top: 10px;
+    }
+
+    .promoCodeInput {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .promoCodeButton {
+        height: 32px !important;
+        font-size: 15px !important;
+    }
+
+    .totalPay {
+        font-size: 25px;
+    }
+
+
+
+
+
+}
