@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rustic-delouis-pie-co./static/css/main.f855e6bc.css",
+    "main.js": "/rustic-delouis-pie-co./static/js/main.f0c28822.js",
+    "static/js/787.aee618b0.chunk.js": "/rustic-delouis-pie-co./static/js/787.aee618b0.chunk.js",
+    "static/media/logo.svg": "/rustic-delouis-pie-co./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rustic-delouis-pie-co./index.html",
+    "main.f855e6bc.css.map": "/rustic-delouis-pie-co./static/css/main.f855e6bc.css.map",
+    "main.f0c28822.js.map": "/rustic-delouis-pie-co./static/js/main.f0c28822.js.map",
+    "787.aee618b0.chunk.js.map": "/rustic-delouis-pie-co./static/js/787.aee618b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.f0c28822.js"
+  ]
+}
